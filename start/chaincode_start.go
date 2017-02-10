@@ -38,6 +38,8 @@ func main() {
 }
 
 // Init resets all the things
+// In your chaincode_start.go file, change the Init function so that it stores the first args element to the key "hello_world".
+// This is done by using the stub function stub.PutState. This function interprets the first argument sent in the deployment request as the value to be stored under the key 'hello_world'.
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
     if len(args) != 1 {
         return nil, errors.New("Incorrect number of arguments. Expecting 1")
