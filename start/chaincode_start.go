@@ -86,7 +86,7 @@ func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string)
     return nil, nil
 }
 
-// Query is our entry point for queries
+// Query is our entry point for queries Marckinson
 func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
     fmt.Println("query is running " + function)
 
