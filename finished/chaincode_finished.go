@@ -310,9 +310,9 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
     fmt.Println("query is running " + function)
 
     // Handle different functions
-    if function == "getPart" {return t.getPart(stub, args [0])}
-	if function == "getAllParts" { return t.getAllParts(stub, args[0]) }
-	if function == "getAllPartsDetails" { return t.getAllPartsDetails(stub, args[0]) }
+    if function == "getPart" {return t.getPart(stub, args )}
+	if function == "getAllParts" { return t.getAllParts(stub, args) }
+	if function == "getAllPartsDetails" { return t.getAllPartsDetails(stub, args) }
 	
     fmt.Println("query did not find func: " + function)
 

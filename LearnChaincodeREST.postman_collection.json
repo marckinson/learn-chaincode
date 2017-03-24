@@ -21,7 +21,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"method\": \"query\",\r\n  \"params\": {\r\n      \"type\": 1,\r\n      \"chaincodeID\":{\r\n          \"name\":\"<CHAINCODE_HASH_HERE>\"\r\n      },\r\n      \"ctorMsg\": {\r\n         \"function\":\"marki\",\r\n         \"args\":[\"hello_world\"]\r\n      },\r\n      \"secureContext\": \"<YOUR_USER_HERE>\"\r\n  },\r\n  \"id\": 5\r\n}"
+					"raw": "{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"method\": \"query\",\r\n  \"params\": {\r\n      \"type\": 1,\r\n      \"chaincodeID\":{\r\n          \"name\":\"<CHAINCODE_HASH_HERE>\"\r\n      },\r\n      \"ctorMsg\": {\r\n         \"function\":\"read\",\r\n         \"args\":[\"hello_world\"]\r\n      },\r\n      \"secureContext\": \"<YOUR_USER_HERE>\"\r\n  },\r\n  \"id\": 5\r\n}"
 				},
 				"description": "Queries for the value of \"a\" from chaincode_example02"
 			},
